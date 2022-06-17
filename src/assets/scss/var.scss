@@ -1,0 +1,144 @@
+// Colors
+$primary: 				#F2994A;
+$success: 				#5BC12C;
+$danger: 				#EB5757;
+
+$black: 				#131417;
+$dark: 					#252830;
+
+$white: 				#ffffff;
+
+
+$body-bg: 				$white;
+$bg: 					$white;
+
+$link-color-active: 	$primary;
+
+
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+$enable-print-styles: true !default;
+$enable-responsive-font-sizes: true !default;
+$enable-validation-icons: true !default;
+$enable-deprecation-messages: true !default;
+
+// Burger
+$burger-width: 42px;
+$burger-height:	34px;
+$burger-thickness: 2px;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+	(
+		0: 0,
+		1: $spacer * 0.25,
+		2: $spacer * 0.5,
+		3: $spacer,
+		4: $spacer * 1.5,
+		5: $spacer * 3,
+		6: $spacer * 4.375,
+	),
+	$spacers
+);
+
+// Border radius
+$border-radius: 20px;
+$border-radius-md: 15px;
+$border-radius-sm: 10px;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+	"Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+
+// Font weight
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 800 !default;
+$font-weight-black: 900 !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$headings-margin-bottom: 1rem !default;
+$headings-font-family: null !default;
+$headings-font-weight: $font-weight-bold !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+$paragraph-margin-bottom: 1rem !default;
+
+$dt-font-weight: $font-weight-bold !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.25 !default;
+$h4-font-size: $font-size-base * 1.125 !default;
+$h5-font-size: $font-size-base * 1 !default;
+
+// Links
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($primary, 10%) !default;
+$link-hover-decoration: none !default;
+
+// Table
+$table-cell-padding: 0.75rem !default;
+$table-cell-padding-sm: 0.3rem !default;
+$table-caption-color: $dark !default;
+
+// Label
+$label-margin-bottom: 0.5rem !default;
+
+// Zindex
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+
+// Grid
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 28px !default;
+$container-max-widths: (
+	lg: 1200px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Display
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+
+
+// Transition
+$transition-base: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-fade: opacity 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-collapse: height 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-collapse-width: width 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;

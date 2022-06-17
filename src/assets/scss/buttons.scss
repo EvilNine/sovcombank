@@ -1,0 +1,38 @@
+.btn {
+    // base styles
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.313rem;
+    line-height: 1.4;
+    display: inline-block;
+    vertical-align: middle;
+    // height: 2.875rem;
+    padding: 1.207rem 2.5rem;
+    user-select: none;
+    border-radius: $border-radius-sm;
+    user-select: none;
+    white-space: nowrap;
+    transition: color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),background-color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),border-color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95),box-shadow .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    @media (max-width: 1199px) {
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
+    }
+    @media (max-width: 797px) {
+        font-size: .938rem;
+        display: block;
+        width: 100%;
+    }
+    &-light {
+        background-color: $white;
+        border-color: $white;
+        color: $black;
+        &:hover {
+            background-color: darken($white, 5%);
+            color: $black;
+            text-decoration: none;
+        }
+        
+    }    
+}
