@@ -22,13 +22,13 @@ const mobileMenu = () => {
             const container = btn.parentElement;
             container.classList.toggle('sub__open');
         });
-        btn.addEventListener('mouseenter', (e)=>{    
-            e.target.parentElement.classList.add('_hover')
-        })
+        // btn.addEventListener('mouseenter', (e)=>{    
+        //     e.target.parentElement.classList.add('_hover')
+        // })
 
-        btn.addEventListener('mouseleave', (e)=>{
-            e.target.parentElement.classList.remove('_hover')
-        })
+        // btn.addEventListener('mouseleave', (e)=>{
+        //     e.target.parentElement.classList.remove('_hover')
+        // })
 
     });
 
